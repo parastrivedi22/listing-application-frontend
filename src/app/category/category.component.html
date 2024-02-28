@@ -1,0 +1,9 @@
+<div class="p-2">
+    <ul class="list-group">
+        <button (click)="getCategory('all')" class="btn btn-secondary list-group-item">See All</button>
+    </ul>
+    <ul *ngFor="let catgory of categoryList" class="list-group">
+        <button (click)="getCategory(catgory.categoryName)"
+            class="btn btn-secondary list-group-item">{{catgory.categoryName}}</button>
+    </ul>
+</div>

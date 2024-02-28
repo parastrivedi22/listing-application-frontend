@@ -1,0 +1,27 @@
+<div class="container">
+    <div class=" my-4 bg-light p-3 rounded-3">
+        <div class="row    ">
+            <div class="image col-12 col-md-3 ">
+                <img style="height: 350px; width: 100px;" class="w-100 border border-1 shadow rounded-3 p-4"
+                    src={{product.imageUrl}} alt="">
+
+
+            </div>
+            <div class="details  col-12 col-md-8">
+                <h3 class=" p-3 ">{{product.productName}}</h3>
+                <h5 class="p-3 bold"><span>₹</span> {{product.price}}</h5>
+
+
+                <!-- product description -->
+                <div class=" desc ps-3 py-2">
+                    <small>{{product.productDescription}}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- silimar product list  -->
+    <div>
+        <app-similar-product-list [product]='product'></app-similar-product-list>
+    </div>
+</div>
